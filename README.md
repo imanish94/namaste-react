@@ -1,25 +1,34 @@
-✈️ Namaste React Learning
+# ✈️ Namaste React Learning
 
-Episode 01 : Inception
+## Episode-01 | Inception
 
-- Introduction to React
-- What is React and why use it
-- React vs other frameworks
-- Setting up development environment
-- Creating first React app
-- JSX syntax and how it works
-- Components and component creation
-- Rendering elements to DOM
-- React element vs DOM element
+_Introduction to foundational tools and frameworks in web development._
 
-Episode 02 : Igniting our App
+### Topics Covered:
 
-- NPM and package managers
-- package.json and package-lock.json
-- Installing dependencies
-- Webpack and bundling
-- Babel and transpiling JSX
-- Parcel bundler setup
-- Hot module reloading
-- Development server configuration
-- Building and optimizing React apps
+- Visual code setup.
+- Hello world in HTML/JS.
+- CDN, React Hello World.
+
+---
+
+## Episode-02 | Igniting our App
+
+_Dive into essential package managers and module bundlers for React projects._
+
+### Topics Covered:
+
+- npm, Parcel
+- Node modules
+- React app file structure
+
+---
+
+## Episode-03 | Laying the foundation
+
+_Understanding JSX, React components, and their compositions._
+
+### Topics Covered:
+
+- JSX, React components
+- Class-based vs Functional components

@@ -16,6 +16,8 @@
   "license": "ISC",
   "author": "Manish Sharma",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
