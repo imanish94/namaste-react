@@ -32,3 +32,33 @@ _Understanding JSX, React components, and their compositions._
 
 - JSX, React components
 - Class-based vs Functional components
+
+## Episode-04 | Talk is Cheap, Show Me the Code
+
+_Implementing React's core features, managing state, and working with UI data._
+
+### Topics Covered:
+
+- React app building
+- props/state
+- function mapping
+
+---
+
+### Swiggy Dummy Data API Documentation
+
+This in-house API provides Swiggy-like restaurant and menu data for food delivery applications. The API offers two main endpoints for fetching restaurant listings and detailed menu information.
+
+---
+
+## Episode-05 | Let's Get Hooked
+
+_Exploring React Hooks and understanding their importance._
+
+### Topics Covered:
+
+- File structure
+- Import/export
+- React Hooks (useState)
+
+---
