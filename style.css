@@ -270,3 +270,10 @@ body {
 .menu-shimmer li .shimmer-text.short {
   width: 60px;
 }
+
+.user-card {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border: 1px solid #000;
+}
