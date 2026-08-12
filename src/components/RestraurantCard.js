@@ -6,13 +6,13 @@ const RestaurantCard = ({ restoList }) => {
   const imageUrl = info.cloudinaryImageId;
   const slaString = info.sla.slaString;
   return (
-    <div className="restaurant-card">
+    <div className="w-[250px] h-[400px] m-2 p-2 rounded-lg bg-gray-100 hover:bg-gray-200">
       <img
         src={imageUrl ? `${CLOUDINARY_IMAGE_URL}${imageUrl}` : ""}
         alt="Restaurant"
-        className="restaurant-image"
+        className="w-full h-40 object-cover rounded-lg"
       />
-      <h3>{name}</h3>
+      <h3 className="font-bold py-4">{name}</h3>
       <p>{cuisines.join(", ")}</p>
       <p>Rating: {avgRating}</p>
       <p>Address: {locality}</p>
