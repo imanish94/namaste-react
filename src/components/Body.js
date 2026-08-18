@@ -1,13 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import RestaurantCard from "./RestraurantCard";
+import RestaurantCard, { RestraurantCardPromoted } from "./RestraurantCard";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { UserInfo } from "../context/UserContext";
 const Body = () => {
   const [restaurantsList, setRestaurantsList] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [filterRestaurantList, setFilterRestaurantList] = useState([]);
   const onlineStatus = useOnlineStatus();
+  const PromotedRestaurant = RestraurantCardPromoted(RestaurantCard);
+  const { userName, setUserName } = useContext(UserInfo);
 
   const fetchData = async () => {
     try {
@@ -81,6 +84,15 @@ const Body = () => {
         >
           Top Rated Restaurants
         </button>
+
+        <p>
+          Uesr Name :{" "}
+          <input
+            className="border border-black my-2"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </p>
       </div>
 
       <div className="container flex flex-wrap">
@@ -90,7 +102,11 @@ const Body = () => {
               key={restaurant.card.card.info.id}
               to={`/restaurant/${restaurant.card.card.info.id}`}
             >
-              <RestaurantCard restoList={restaurant} />
+              {restaurant.card.card.info.promoted ? (
+                <PromotedRestaurant restoList={restaurant} />
+              ) : (
+                <RestaurantCard restoList={restaurant} />
+              )}
             </Link>
           ))}
         </div>

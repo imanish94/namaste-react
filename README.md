@@ -117,3 +117,13 @@ _Introduction to Tailwind CSS for responsive UI designs._
 ### Topics Covered:
 
 - Tailwind CSS introduction for UI design
+
+## Episode-11 | Data is the New Oil
+
+_Handling data flow and DevTools exploration._
+
+### Topics Covered:
+
+- Higher-Order Components
+- Controlled vs Uncontrolled Components
+- React DevTools

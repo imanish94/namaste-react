@@ -6,7 +6,6 @@ const UserFunctionalComponent = ({ name, location, contact }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCount(count + 1);
-      console.log("setinterval");
     }, 1000);
 
     return () => {
@@ -15,7 +14,7 @@ const UserFunctionalComponent = ({ name, location, contact }) => {
   });
 
   return (
-    <div className="user-card">
+    <div className="border border-black m-2 p-2">
       <h1>User Information Functional Component</h1>
       <h2>Name: {name}</h2>
       <h3>Location: {location}</h3>
