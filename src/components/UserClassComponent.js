@@ -1,4 +1,5 @@
 import React from "react";
+import { UserInfo } from "./../context/UserContext";
 
 class UserClassComponent extends React.Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class UserClassComponent extends React.Component {
   render() {
     const { name, location, contact } = this.state.info;
     return (
-      <div className="user-card">
+      <div className="border border-black m-2 p-2">
         <h1>User Information Class Component</h1>
         <h2>Name: {name}</h2>
         <h3>Location: {location}</h3>
@@ -49,6 +50,10 @@ class UserClassComponent extends React.Component {
         >
           Increment Count
         </button>
+        <p>
+          Name:
+          <UserInfo.Consumer>{(user) => user.userName}</UserInfo.Consumer>
+        </p>
       </div>
     );
   }
