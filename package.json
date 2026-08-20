@@ -17,6 +17,7 @@
   "author": "Manish Sharma",
   "scripts": {
     "start": "parcel index.html",
+    "server": "node server/server.js",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^6.30.1"
   }
 }
