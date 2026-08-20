@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { LOGO_URL } from "../utils/constant";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { UserInfo } from "./../context/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [login, setLogin] = useState(false);
   const onlineStatus = useOnlineStatus();
   const { userName, setUserName } = useContext(UserInfo);
+  const items = useSelector((store) => store.cart.items);
 
   const handleLogin = () => {
     const newLogin = !login;
@@ -41,7 +43,9 @@ const Header = () => {
           <li className="px-4">
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="px-4">Cart</li>
+          <li className="px-4">
+            <Link to="/cart">Cart ({items.length} items)</Link>
+          </li>
           <button className="button" onClick={handleLogin}>
             {login ? "Logout" : "Login"}
           </button>

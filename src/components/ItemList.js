@@ -1,6 +1,14 @@
+import { addItem } from "../redux/cartSlice";
 import { CLOUDINARY_IMAGE_URL } from "./../utils/constant";
+import { useDispatch } from "react-redux";
 
 const ItemList = ({ list }) => {
+  const dispatch = useDispatch();
+
+  const handlerAddItemsToCart = (item) => {
+    dispatch(addItem(item));
+  };
+
   return (
     <div>
       {list.map((item) => {
@@ -23,12 +31,18 @@ const ItemList = ({ list }) => {
             </div>
 
             {/* Item Image */}
-            <div className="w-3/12">
+            <div className="w-3/12 relative">
               <img
                 src={CLOUDINARY_IMAGE_URL + info?.imageId}
                 alt={info?.name}
                 className="w-32 h-24 object-cover rounded-lg"
               />
+              <button
+                className="absolute top-2 left-4 rounded-2xl w-18 bg-black text-white p-1 cursor-pointer"
+                onClick={() => handlerAddItemsToCart(item)}
+              >
+                Add +{" "}
+              </button>
             </div>
           </div>
         );

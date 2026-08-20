@@ -16,8 +16,8 @@
   "license": "ISC",
   "author": "Manish Sharma",
   "scripts": {
-    "start": "parcel index.html",
-    "server": "node server/server.js",
+    "start": "parcel index.html --no-cache",
+    "dev": "parcel index.html --no-cache",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,9 +25,11 @@
     "parcel": "^2.16.4"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
     "@tailwindcss/postcss": "^4.3.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-redux": "^9.3.0",
     "react-router-dom": "^6.30.1",
     "tailwindcss": "^4.3.3"
   }
