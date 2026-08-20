@@ -127,3 +127,14 @@ _Handling data flow and DevTools exploration._
 - Higher-Order Components
 - Controlled vs Uncontrolled Components
 - React DevTools
+
+## Episode-12 | Let's Build Our Store
+
+_Implementing Redux Toolkit for state management._
+
+### Topics Covered:
+
+- Redux Toolkit
+- React-Redux
+- Actions
+- Reducers
