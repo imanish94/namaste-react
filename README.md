@@ -62,3 +62,58 @@ _Exploring React Hooks and understanding their importance._
 - React Hooks (useState)
 
 ---
+
+## Episode-06 | Exploring the World
+
+_Architecture insights, useEffect hook, and working with APIs._
+
+### Topics Covered:
+
+- Architecture, useEffect
+- Conditional Rendering
+- API usage
+
+---
+
+## Episode-07 | Finding the Path
+
+_Mastering React Router for smooth navigation and routing._
+
+### Topics Covered:
+
+- React Router
+- Dynamic Routing
+- Outlet Component
+
+---
+
+## Episode-08 | Let's Get Classy
+
+_Learning Class-based components and their lifecycles._
+
+### Topics Covered:
+
+- Class-based components
+- Lifecycle methods
+
+---
+
+## Episode-09 | Optimizing our App
+
+_Advanced optimization techniques including Custom Hooks._
+
+### Topics Covered:
+
+- Custom Hooks
+- Optimization
+- Suspense Component
+
+---
+
+## Episode-10 | Jo Dikhta Hai, Vo Bikta Hai
+
+_Introduction to Tailwind CSS for responsive UI designs._
+
+### Topics Covered:
+
+- Tailwind CSS introduction for UI design
